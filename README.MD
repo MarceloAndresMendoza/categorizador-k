@@ -6,4 +6,4 @@ WebApp developed on a Critical care unit on a high complexity hospital for measu
 
 ### Version History
 
-You can view version history on the file [version.md]("https://github.com/MarceloAndresMendoza/categorizador-k/version.md")
+You can view version history on the file [version.md](https://github.com/MarceloAndresMendoza/categorizador-k/blob/main/version-history.md)
