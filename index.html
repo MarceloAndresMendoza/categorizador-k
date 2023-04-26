@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="assets/style/fonts.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/script/jquery-3.6.4.min.js"></script>
+    <script src="assets/script/script.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Categorizador K">
+    <link rel="apple-touch-icon" href="assets/logos/logo-kine.png">
+    <title>Categorizador K</title>
+</head>
+
+<body>
+    <main>
+        <div class="instrument">
+            <div class="table">
+                <div class="table-headers">
+                    <div class="table-header colspan-1">Dimensiones</div>
+                    <div class="table-header colspan-4">Calificadores</div>
+                </div>
+                <!-- Dimensiones -->
+                <!-- Dimensión 1 -->
+                <div class="table-dimension" id="dimension-1">
+                    <div class="table-dimension-title">
+                        <div class="table-dimension-title-text">Plan Terapia Motora</div>
+                        <div class="table-dimension-title-subtext">Puntaje</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Con barreras para la movilidad</div>
+                            <div class="list-item">Movilidad pasiva</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">1</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Movilidad activa sólo en cama</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">2</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Fortalecimiento musculatura periférica en cama</div>
+                            <div class="list-item">Sedente borde cama</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">3</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Fortalecimiento musc. periférica fuera de cama y/o respiratoria</div>
+                            <!-- <div class="list-item">Fortalecimiento musc. respiratoria</div> -->
+                            <div class="list-item">Actividad fuera de cama</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">4</div>
+                    </div>
+                </div>
+                <!-- Dimensión 2 -->
+                <div class="table-dimension" id="dimension-2">
+                    <div class="table-dimension-title">
+                        <div class="table-dimension-title-text">Alteración de la Fuerza Muscular Periférica</div>
+                        <div class="table-dimension-title-subtext">Puntaje</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Sin alteración de la fuerza muscular (MRC 60)</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">0</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">MRC &gt; 48 y &lt; 60</div>
+                            <div class="list-item">SAS 1 o no cooperador</div>
+                            <div class="list-item">Neurológico secuelado y/o con bajo potencial de rehabilitación</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">3</div>
+                    </div>
+                    <div class="table-dimension-button colspan-2" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">MRC <u>&lt;</u> a 48</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">6</div>
+                    </div>
+                </div>
+                <!-- Dimensión 3 -->
+                <div class="table-dimension" id="dimension-3">
+                    <div class="table-dimension-title">
+                        <div class="table-dimension-title-text">Asistencia de la Función Respiratoria</div>
+                        <div class="table-dimension-title-subtext">Puntaje</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Sin necesidad de asistencia</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">0</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">O<span class="subindex">2</span> terapia FiO<span
+                                    class="subindex">2</span> &lt; 0.4</div>
+                            <div class="list-item">CNAF flujo <u>&lt;</u> 40 lpm</div>
+                            <div class="list-item">VMNI nocturno</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">1</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">O<span class="subindex">2</span> terapia FiO<span
+                                    class="subindex">2</span> &gt; 0.4</div>
+                            <div class="list-item">CNAF flujo &gt; 40 lpm</div>
+                            <div class="list-item">VMI o VMNI continua o diurna intermitente</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">4</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">VMI con necesidad de MRA, prono, ECMO.</div>
+                            <div class="list-item">En proceso de extubación o weaning dificultoso</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">5</div>
+                    </div>
+                </div>
+                <!-- Dimensión 4 -->
+                <div class="table-dimension" id="dimension-4">
+                    <div class="table-dimension-title">
+                        <div class="table-dimension-title-text">Asistencia para permeabilizar vía aérea</div>
+                        <div class="table-dimension-title-subtext">Puntaje</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Sin VA artificial: permeabilizar vía aérea sin asistencia</div>
+                        </div>
+                        <div class="table-dimension-separator"></div>
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Con VA artificial sin cuadro secretor</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">0</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Sin VA artificial: requiere asistencia de la tos</div>
+                        </div>
+                        <div class="table-dimension-separator"></div>
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Con VA artificial + secreciones en VA proximal</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">1</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Sin VA artificial: requiere TTKK + asistencia de la tos</div>
+                        </div>
+                        <div class="table-dimension-separator"></div>
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Con VA artificial + secreciones en VA proximal y medial</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">2</div>
+                    </div>
+                    <div class="table-dimension-button" onmousedown="buttonClick(this);">
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Sin VA artificial: requiere TTKK + asistencia de la tos + SOF o SNF
+                            </div>
+                        </div>
+                        <div class="table-dimension-separator"></div>
+                        <div class="table-dimension-button-text">
+                            <div class="list-item">Con VA artificial + secreciones en VA proximal media y distal</div>
+                        </div>
+                        <div class="table-dimension-button-subtext">3</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Detalles -->
+            <div class="details">
+                <p class="image-logos"><img src="assets/logos/logo-kine.png" width="128px" alt=""><img
+                        src="assets/logos/logo-sst.jpg" height=64px alt=""></p>
+                        <div class="table-sidebar-header">
+                            <h2>Categorización de Dependencia Kinesiológica</h2>
+                            <h3>Unidad de Paciente Crítico <br>Hospital Las Higueras SS. Talcahuano</h3>
+                        </div>
+                <div class="table-description">
+                    <h2>Categorización obtenida</h2>
+                    <table class="table-scores">
+                        <tr>
+                            <td class="table-title">Categorización</td>
+                            <td class="category scoretable"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Puntaje</td>
+                            <td class="score scoretable"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Número de atenciones</td>
+                            <td class="sessions scoretable"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-title last">Descripción</td>
+                            <td class="activities scoretable"></td>
+                        </tr>
+                    </table>
+                    <p class="instructions">Seleccione los botones en la tabla principal para obtener la categorización.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Versión 1.0 revisión # 45</p>
+            <p>2023 - Herramienta en desarrollo - La versión final puede ser diferente</p>
+            <p >Software desarrollado por Marcelo Mendoza - <a href="https://github.com/MarceloAndresMendoza"
+                    target="_blank" rel="noopener noreferrer">GitHub</a> - <a
+                    href="https://www.linkedin.com/in/marcelo-mendoza-7a554a245/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a> - <a href="http://doblefoco.cl" target="_blank"
+                    rel="noopener noreferrer">DobleFoco Web Services</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
