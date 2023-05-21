@@ -29,19 +29,19 @@ function score() {
     } else if (scoreValue < 5) {
         categoryName = "K4";
         activityList = "Demanda baja<br>1 a 4 puntos"
-        sessions = "Al menos 1"
+        sessions = "1 atención"
     } else if (scoreValue < 8) {
         categoryName = "K3";
         activityList = "Demanda media<br>5 a 7 puntos"
-        sessions = "Al menos 2"
+        sessions = "2 atenciones"
     } else if (scoreValue < 11) {
         categoryName = "K2";
         activityList = "Demanda alta<br>8 a 10 puntos"
-        sessions = "Al menos 3"
+        sessions = "3 atenciones"
     } else {
         categoryName = "K1";
         activityList = "Demanda máxima<br>&gt; 11 puntos"
-        sessions = "Al menos 5"
+        sessions = "Al menos 4"
     }
     const scoreElement = document.querySelector(".score");
     scoreElement.innerHTML= "Puntos: " + scoreValue;
